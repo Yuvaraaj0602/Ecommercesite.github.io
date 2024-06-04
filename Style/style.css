@@ -325,7 +325,9 @@ p {
     text-decoration: none;
     color: var(--lightblack);
 }
-
+.select{
+    display: flex;
+}
 .price {
     color: var(--head-color);
     padding: 0;
@@ -816,7 +818,7 @@ footer p {
 
     .cart-section ul {
         flex-wrap: wrap;
-        justify-content: end;
+        /* justify-content: end; */
     }
 
     .product-cards {
@@ -882,6 +884,14 @@ footer p {
     .container {
         width: 90%;
 
+    }
+    .cart-section .container{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .select{
+        gap: 20px;
     }
 
     .home-block {
