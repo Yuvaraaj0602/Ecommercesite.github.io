@@ -85,7 +85,7 @@ p {
 }
 
 .primary-navbar {
-    background-color: black;
+    background-color: var(--bg-black);
     padding: 10px 0;
 }
 
@@ -108,7 +108,6 @@ p {
     transition: all 0.5s;
 }
 .primary-navbar li img:hover{
-    transform: scale(1.1);
     content: url('../Images/104464_google_google\ plus_google+_icon.png');
 }
 .primary-navbar ul a:hover {
@@ -174,7 +173,6 @@ p {
 
 .home-content a:hover {
     background-color: var(--head-color);
-    transform: scale(1.1);
     color: var(--white);
 }
 
@@ -182,12 +180,13 @@ p {
     text-transform: uppercase;
     padding: 18px 36px;
     color: var(--lightblack);
+    font-weight: var(--regular);
     text-decoration: none;
     border: 1px solid var(--head-color);
 }
 
 .cart-section {
-    background-color: black;
+    background-color: var(--bg-black);
     padding: 26px 0px 20px 0px;
     color: var(--white);
 }
@@ -250,9 +249,6 @@ p {
     font-size: 16px;
 }
 
-.cart-section .flex-list:hover {
-    transform: scale(1.02);
-}
 
 
 .rate {
@@ -270,12 +266,31 @@ p {
 }
 
 .cart-section button {
+    transition: all 0.5s;
     padding: 12px;
     border: none;
     color: var(--white);
     background-color: var(--head-color);
 }
+.cart-section input:focus{
+    box-shadow: 0 0 2px 2px white;
+}
+.cart-section button:hover {
+    background-color: var(--white);
+    border: 1px solid var(--head-color);
+}
+.cart-section button:hover path{
+    fill: var(--head-color);
 
+}
+.cart:hover{
+    background-color: var(--white);
+    border: 1px solid var(--head-color);
+
+}
+.cart:hover path{
+    fill: var(--head-color);
+}
 
 .popular-item-section {
     text-align: center;
@@ -315,11 +330,15 @@ p {
     column-gap: 30px;
     text-align: center;
 }
+.product-card .media-group{
+    overflow: hidden;
+}
 
-.product-card img {
+.product-card a img {
     transition: all 0.5s;
     width: 100%;
     height: 100%;
+   
 }
 
 .product-card h6 {
@@ -330,7 +349,7 @@ p {
 
 .product-card h6 a:hover {
     text-decoration: underline;
-    transform: scale(1.1);
+   
 }
 
 .product-card a img:hover {
@@ -356,14 +375,12 @@ p {
 
 .winter-collection a:hover:not(.product-card a) {
     background-color: var(--head-color);
-    transform: scale(1.1);
     color: var(--white);
 }
 
 .winter-collection a {
-
     font-size: 15px;
-    font-weight: 400;
+    font-weight: var(--regular);
     text-decoration: none;
     color: var(--lightblack);
     border: 1px solid var(--head-color);
@@ -430,10 +447,12 @@ p {
 }
 
 .newsletter input[type='submit']:hover {
-    transform: scale(1.1);
+  color: var(--head-color);
+  background-color: var(--white);
+  border: 1px solid var(--head-color);
 }
 
-.newsletter input[type='email']:hover {
+.newsletter input[type='email']:focus {
     box-shadow: 0px 0px 1px 1px var(--head-color);
 }
 
@@ -475,12 +494,13 @@ p {
 .collection-flex a {
     flex: 1;
     padding: 16px 22px;
+    font-weight: var(--regular);
     border: 1px solid var(--head-color);
 }
 
 .collection-flex a:hover:not(.product-card a) {
     background-color: var(--head-color);
-    transform: scale(0.9);
+   
     color: var(--white);
 }
 
@@ -492,6 +512,7 @@ p {
 .anc a {
     border: 1px solid var(--head-color);
     padding: 19px 31px;
+    font-weight: var(--regular);
     transition: all 0.3s ease-in;
 
 }
@@ -499,7 +520,7 @@ p {
 .anc a:hover {
 
     background-color: var(--head-color);
-    transform: scale(1.1);
+  
     color: var(--white);
 
 
@@ -525,7 +546,8 @@ p {
 }
 
 .about-us a {
-    padding: 20px 36px;
+    font-weight: var(--regular);
+    padding: 19px 31px;
     color: #2a2a2a;
     border: 1px solid var(--head-color);
     transition: all 0.3s ease-in;
@@ -533,7 +555,6 @@ p {
 
 .about-us a:hover:not(.product-card a) {
     background-color: var(--head-color);
-    transform: scale(1.1);
     color: var(--white);
 }
 
@@ -553,8 +574,7 @@ footer {
     gap: 35px;
 }
 
-.footer-flex div,
-.footer-flex ul {
+.footer-flex div:not(.ul-list){
     flex: 2;
 }
 
@@ -562,7 +582,7 @@ footer {
     color: var(--head-color);
 }
 
-.footer-flex ul {
+.footer-flex .ul-list {
     flex: 1;
 }
 
@@ -585,8 +605,7 @@ footer a {
 }
 
 footer a:hover:not(footer li a) {
-    transform: scale(1.1);
-
+   
     background: var(--head-color);
 
 
@@ -609,7 +628,7 @@ footer li a {
 
 
 .social-icons img:hover {
-    transform: scale(1.1);
+   
     content: url('../Images/104464_google_google\ plus_google+_icon.png');
     width: 18px;
 }
@@ -622,11 +641,12 @@ footer li a {
 footer p {
     margin-top: 31px;
     margin-bottom: 47px;
+    color: var(--white);
 
 }
 
 .footer-flex li a:hover,
 .footer-flex i:hover {
     color: var(--head-color);
-    transform: scale(1.1);
+   
 }

@@ -82,16 +82,22 @@
     padding: 90px 0px 77px 0px;
 }
 
-.options select:last-child {
-    padding: 12px 45px 12px 24px
+.size-sel .qty{
+    font-size: 20px;
+    padding: 12px 45px 12px 24px;
+    font-weight: var(--regular);
+    background-color: white;
+    appearance: none;
+     border: 1px solid var(--head-color);
+    outline: none;
 }
 
-.options select {
+.size-sel .size{
     padding: 15px 56px 15px 23px;
     font-weight: var(--regular);
     text-transform: uppercase;
-    background-color: transparent;
-    font-size: 20px;
+    background-color: white;
+    font-size: 15px;
     border: 1px solid var(--head-color);
     outline: none;
     appearance: none;
