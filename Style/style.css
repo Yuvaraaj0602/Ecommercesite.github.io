@@ -271,6 +271,7 @@ p {
 }
 
 .cart-section button {
+    cursor: pointer;
     transition: all 0.5s;
     padding: 12px;
     border: none;
@@ -804,25 +805,22 @@ footer p {
         width: 90%;
 
     }
-
     .secondary-navbar{
-        padding: 10px;
-        gap: 5px;
+        gap: 10px;
     }
-    .secondary-navbar ul {
-        flex-direction: column;
-       
-
-    }
+   
 
     .home-content {
         padding: 32px 0px;
 
     }
-
-    .cart-section ul {
+    .cart-section .container{
         flex-wrap: wrap;
-        /* justify-content: end; */
+        justify-content: center;
+    }
+    .cart-section div {
+       gap: 20px;
+        
     }
 
     .product-cards {
@@ -887,6 +885,15 @@ footer p {
 
     .container {
         width: 90%;
+
+    }
+    .secondary-navbar{
+        padding: 10px;
+        gap: 5px;
+    }
+    .secondary-navbar ul {
+        flex-direction: column;
+       
 
     }
     .cart-section .container{
