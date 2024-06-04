@@ -189,7 +189,6 @@
 
 
 .product-contents a:hover {
-    transform: scale(1.1);
     background-color: var(--head-color);
     color: var(--white);
 }
@@ -235,7 +234,6 @@ details p {
 }
 
 .similar-item-section {
-
     margin-top: 100px;
     text-align: center;
 }

@@ -277,7 +277,7 @@ p {
 }
 .cart-section button:hover {
     background-color: var(--white);
-    border: 1px solid var(--head-color);
+    
 }
 .cart-section button:hover path{
     fill: var(--head-color);
@@ -285,8 +285,6 @@ p {
 }
 .cart:hover{
     background-color: var(--white);
-    border: 1px solid var(--head-color);
-
 }
 .cart:hover path{
     fill: var(--head-color);
@@ -341,7 +339,7 @@ p {
    
 }
 
-.product-card h6 {
+.product-card h6 a{
     transition: all 0.5s;
     padding: 5px;
     margin: 0;
