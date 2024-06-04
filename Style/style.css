@@ -104,12 +104,15 @@ p {
     font-size: var(--sm);
     color: var(--white);
 }
-.primary-navbar li img{
+
+.primary-navbar li img {
     transition: all 0.5s;
 }
-.primary-navbar li img:hover{
+
+.primary-navbar li img:hover {
     content: url('../Images/104464_google_google\ plus_google+_icon.png');
 }
+
 .primary-navbar ul a:hover {
     color: var(--head-color);
 }
@@ -225,10 +228,12 @@ p {
     appearance: none;
 
 }
-.sel-nav{
+
+.sel-nav {
     position: relative;
 }
-.sel-nav::after{
+
+.sel-nav::after {
     content: '';
     border: solid 5px;
     border-color: white transparent transparent transparent;
@@ -272,21 +277,26 @@ p {
     color: var(--white);
     background-color: var(--head-color);
 }
-.cart-section input:focus{
+
+.cart-section input:focus {
     box-shadow: 0 0 2px 2px white;
 }
+
 .cart-section button:hover {
     background-color: var(--white);
-    
+
 }
-.cart-section button:hover path{
+
+.cart-section button:hover path {
     fill: var(--head-color);
 
 }
-.cart:hover{
+
+.cart:hover {
     background-color: var(--white);
 }
-.cart:hover path{
+
+.cart:hover path {
     fill: var(--head-color);
 }
 
@@ -328,7 +338,8 @@ p {
     column-gap: 30px;
     text-align: center;
 }
-.product-card .media-group{
+
+.product-card .media-group {
     overflow: hidden;
 }
 
@@ -336,19 +347,33 @@ p {
     transition: all 0.5s;
     width: 100%;
     height: 100%;
-   
+
 }
 
-.product-card h6 a{
-    transition: all 0.5s;
+.product-card h6 a {
+    transition: all 1s;
     padding: 5px;
     margin: 0;
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
 }
-
-.product-card h6 a:hover {
-    text-decoration: underline;
-   
-}
+.product-card h6 a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 80px;
+    width: 40%;
+    height: 0.1em;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    transform: translate3d(-20%, 0, 0);
+  }
+  .product-card h6 a:hover::after,
+  a:focus::after { opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
 
 .product-card a img:hover {
     transform: scale(1.05);
@@ -385,6 +410,32 @@ p {
 
     padding: 19px 31px;
 }
+ .winter-collection .product-card h6 a {
+    transition: all 1s;
+    padding: 5px;
+    margin: 0;
+    display: block;
+    position: relative;
+    padding: 0.2em 0;
+}
+.winter-collection .product-card h6 a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    width: 100%;
+    height: 0.1em;
+    background-color: black;
+    opacity: 0;
+    transition: opacity 300ms, transform 300ms;
+    transform: translate3d(-20%, 0, 0);
+  }
+  .winter-collection .product-card h6 a:hover::after,
+  a:focus::after { 
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+
 
 .product-card a {
     padding: 0;
@@ -445,9 +496,9 @@ p {
 }
 
 .newsletter input[type='submit']:hover {
-  color: var(--head-color);
-  background-color: var(--white);
-  border: 1px solid var(--head-color);
+    color: var(--head-color);
+    background-color: var(--white);
+    border: 1px solid var(--head-color);
 }
 
 .newsletter input[type='email']:focus {
@@ -498,7 +549,7 @@ p {
 
 .collection-flex a:hover:not(.product-card a) {
     background-color: var(--head-color);
-   
+
     color: var(--white);
 }
 
@@ -518,7 +569,7 @@ p {
 .anc a:hover {
 
     background-color: var(--head-color);
-  
+
     color: var(--white);
 
 
@@ -572,7 +623,7 @@ footer {
     gap: 35px;
 }
 
-.footer-flex div:not(.ul-list){
+.footer-flex div:not(.ul-list) {
     flex: 2;
 }
 
@@ -603,7 +654,7 @@ footer a {
 }
 
 footer a:hover:not(footer li a) {
-   
+
     background: var(--head-color);
 
 
@@ -626,7 +677,7 @@ footer li a {
 
 
 .social-icons img:hover {
-   
+
     content: url('../Images/104464_google_google\ plus_google+_icon.png');
     width: 18px;
 }
@@ -646,5 +697,5 @@ footer p {
 .footer-flex li a:hover,
 .footer-flex i:hover {
     color: var(--head-color);
-   
+
 }
