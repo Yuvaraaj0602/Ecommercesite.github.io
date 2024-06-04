@@ -326,9 +326,11 @@ p {
     text-decoration: none;
     color: var(--lightblack);
 }
-.select{
+
+.select {
     display: flex;
 }
+
 .price {
     color: var(--head-color);
     padding: 0;
@@ -505,6 +507,7 @@ a:focus::after {
 }
 
 .newsletter input[type='submit']:hover {
+
     color: var(--head-color);
     background-color: var(--white);
     border: 1px solid var(--head-color);
@@ -515,6 +518,7 @@ a:focus::after {
 }
 
 .newsletter input[type='submit'] {
+    cursor: pointer;
     transition: all 0.3s;
     width: 171px;
     height: 46px;
@@ -575,12 +579,8 @@ a:focus::after {
 }
 
 .anc a:hover {
-
     background-color: var(--head-color);
-
     color: var(--white);
-
-
 }
 
 
@@ -705,7 +705,6 @@ footer p {
 
 }
 
-
 @media (max-width: 1025px) {
 
 
@@ -805,22 +804,25 @@ footer p {
         width: 90%;
 
     }
-    .secondary-navbar{
+
+    .secondary-navbar {
         gap: 10px;
     }
-   
+
 
     .home-content {
         padding: 32px 0px;
 
     }
-    .cart-section .container{
+
+    .cart-section .container {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .cart-section div {
-       gap: 20px;
-        
+        gap: 20px;
+
     }
 
     .product-cards {
@@ -887,21 +889,25 @@ footer p {
         width: 90%;
 
     }
-    .secondary-navbar{
+
+    .secondary-navbar {
         padding: 10px;
         gap: 5px;
     }
+
     .secondary-navbar ul {
         flex-direction: column;
-       
+
 
     }
-    .cart-section .container{
+
+    .cart-section .container {
         flex-direction: column;
         justify-content: center;
         align-items: center;
     }
-    .select{
+
+    .select {
         gap: 20px;
     }
 
