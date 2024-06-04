@@ -805,9 +805,12 @@ footer p {
 
     }
 
-
+    .secondary-navbar{
+        gap: 5px;
+    }
     .secondary-navbar ul {
-        gap: 10px;
+        flex-direction: column;
+       
 
     }
 
