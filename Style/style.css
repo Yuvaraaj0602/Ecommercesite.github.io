@@ -806,6 +806,7 @@ footer p {
     }
 
     .secondary-navbar{
+        padding: 10px;
         gap: 5px;
     }
     .secondary-navbar ul {
