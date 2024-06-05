@@ -914,28 +914,29 @@ footer p {
     .home-block {
         flex-wrap: wrap;
         align-items: center;
+        
     }
 
     .home-content {
         padding: 16px 0px;
+        text-align: center;
 
     }
 
     .home-media {
         padding-right: 20px;
 
-
     }
 
     .home-media img {
         width: 90dvw;
     }
-
-    .primary-navbar ul,
-    .secondary-navbar  {
-        flex-wrap: wrap;
+    .black-nav,.secondary-navbar{
+        align-items: center;
         gap: 10px;
+        flex-direction: column;
     }
+    
     input[type='email']{
         padding: 0;
     }
@@ -955,12 +956,23 @@ footer p {
     .product-card {
         padding: 0px 25px;
     }
-
-    .newsletter input[type='email'],
-    .newsletter input[type='submit'] {
-        width: 100%;
+    .newsletter .container{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .newsletter form{
+        display: flex;
+        
+    }
+    .newsletter input[type='email']{
+        width: 60%;
+        margin-right:10px;
         margin-bottom: 5px;
 
+    }
+    .newsletter input[type='submit']{
+        width: 40%;
+       
     }
 
     footer {
