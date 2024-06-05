@@ -242,3 +242,56 @@ details p {
     margin-bottom: 70px;
 }
 
+/* Mini-laptop (1024px and below) */
+@media only screen and (max-width: 1024px) {
+    .product-block {
+      flex-direction: column;
+      gap: 30px;
+    }
+    .product-imgs {
+        position: static;
+      flex: none;
+      width: 100%;
+    }
+    .product-contents {
+      flex: none;
+      width: 100%;
+    }
+    .options {
+     
+      justify-content: space-evenly;
+      padding: 40px 0;
+    }
+  
+   
+    .summary {
+      margin-top: 40px;
+    }
+  }
+  
+  /* Tablet (768px and below) */
+  @media only screen and (max-width: 768px) {
+    .product-block {
+      gap: 20px;
+    }
+ 
+    
+   
+    .summary {
+      margin-top: 20px;
+    }
+  }
+  
+  /* Mobile (480px and below) */
+  @media only screen and (max-width: 480px) {
+    .product-block {
+      gap: 10px;
+    }
+   
+    .summary {
+      margin-top: 10px;
+    }
+    .similar-item-section h3 {
+      margin-bottom: 30px;
+    }
+  }
