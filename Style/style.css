@@ -88,7 +88,6 @@ p {
     background-color: var(--bg-black);
     padding: 10px 0;
 }
-
 .black-nav {
     display: flex;
     justify-content: space-between;
