@@ -720,7 +720,7 @@ footer p {
 
     .secondary-navbar ul {
         gap: 20px;
-
+      
     }
 
     .cart-section .container {
@@ -806,6 +806,9 @@ footer p {
 
     .secondary-navbar {
         gap: 10px;
+    }
+    .secondary-navbar ul{
+        flex-wrap: wrap;
     }
 
     .home-content {
