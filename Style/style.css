@@ -88,6 +88,7 @@ p {
     background-color: var(--bg-black);
     padding: 10px 0;
 }
+
 .black-nav {
     display: flex;
     justify-content: space-between;
@@ -127,7 +128,9 @@ p {
     justify-content: center;
     gap: 60px;
 }
-
+.min-logo{
+    display: none;
+}
 .secondary-navbar ul {
     padding: 36px 0px;
     display: flex;
@@ -712,14 +715,14 @@ footer p {
         width: 95%;
 
     }
-  
-    .home-media img{
+
+    .home-media img {
         width: 100%;
     }
 
     .secondary-navbar ul {
         gap: 20px;
-      
+
     }
 
     .cart-section .container {
@@ -737,7 +740,7 @@ footer p {
     }
 
     .home-content {
-       
+
         flex: 1;
 
     }
@@ -779,9 +782,11 @@ footer p {
         padding-right: 18px;
         margin-bottom: 40px;
     }
-    .collection-flex ul{
+
+    .collection-flex ul {
         flex-wrap: wrap;
     }
+
     .about-us a {
         margin-bottom: 25px;
     }
@@ -806,7 +811,8 @@ footer p {
     .secondary-navbar {
         gap: 10px;
     }
-    .secondary-navbar ul{
+
+    .secondary-navbar ul {
         flex-wrap: wrap;
     }
 
@@ -887,17 +893,21 @@ footer p {
         width: 90%;
 
     }
-    .ord-1{
+
+    .ord-1 {
         order: 1;
     }
-    .ord-2{
+
+    .ord-2 {
         order: 2;
     }
 
     .secondary-navbar {
         gap: 2px;
+        display: flex;
     }
-    .secondary-navbar ul{
+
+    .secondary-navbar ul {
         padding: 10px;
     }
 
@@ -914,7 +924,7 @@ footer p {
     .home-block {
         flex-wrap: wrap;
         align-items: center;
-        
+
     }
 
     .home-content {
@@ -931,25 +941,31 @@ footer p {
     .home-media img {
         width: 90dvw;
     }
-    .black-nav,.secondary-navbar{
-        align-items: center;
-        gap: 10px;
+    .black-nav{
         flex-direction: column;
     }
+    .black-nav,
+    .secondary-navbar {
+        align-items: center;
+        gap: 20px;
+        
+    }
     
-    input[type='email']{
+
+    input[type='email'] {
         padding: 0;
     }
-   
-    .cart-section ul{
+
+    .cart-section ul {
         flex-wrap: wrap;
     }
 
     .product-cards {
         grid-template-columns: repeat(2, 1fr);
     }
-    .winter-card{
-        grid-template-columns: repeat(1,1fr);
+
+    .winter-card {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .popular-item-section ul {
@@ -959,29 +975,34 @@ footer p {
     .product-card {
         padding: 0px 25px;
     }
-    .newsletter .container{
+
+    .newsletter .container {
         flex-direction: column;
         gap: 20px;
     }
-    .newsletter form{
+
+    .newsletter form {
         display: flex;
-        
+
     }
-    .newsletter input[type='email']{
+
+    .newsletter input[type='email'] {
         width: 60%;
-        margin-right:10px;
+        margin-right: 10px;
         margin-bottom: 5px;
 
     }
-    .newsletter input[type='submit']{
+
+    .newsletter input[type='submit'] {
         width: 40%;
-       
+
     }
 
     footer {
         padding: 15px;
     }
-    footer a{
+
+    footer a {
         padding: 15px 40px;
     }
 
@@ -993,13 +1014,8 @@ footer p {
 }
 
 
-
-
-
-
-
-
 .menu-button-container {
+    margin-left: 100px;
     display: none;
     height: 100%;
     width: 30px;
@@ -1007,89 +1023,117 @@ footer p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-  }
-  
-  #menu-toggle {
+}
+
+#menu-toggle {
     display: none;
     transition: all 1s;
-  }
-  
-  /*  Creating the menu button */
-  .menu-button,
-  .menu-button::before,
-  .menu-button::after {
+}
+
+/*  Creating the menu button */
+.menu-button,
+.menu-button::before,
+.menu-button::after {
     display: block;
     background-color: #000;
     position: absolute;
     height: 6px;
     width: 32px;
     border-radius: 3px;
-  }
-  
-  .menu-button::before {
+}
+
+.menu-button::before {
     content: '';
     margin-top: -8px;
-  }
-  
-  .menu-button::after {
+}
+
+.menu-button::after {
     content: '';
     margin-top: 8px;
-  }
-  /*  Adding Functionality to the Hamburger Menu with CSS  */
-  #menu-toggle:checked + .menu-button-container .menu-button::before {
+}
+
+/*  Adding Functionality to the Hamburger Menu with CSS  */
+#menu-toggle:checked+.menu-button-container .menu-button::before {
     margin-top: 0px;
     transform: rotate(45deg);
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button {
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button {
     background: rgba(255, 255, 255, 0);
-  }
-  
-  #menu-toggle:checked + .menu-button-container .menu-button::after {
+}
+
+#menu-toggle:checked+.menu-button-container .menu-button::after {
     margin-top: 0px;
-  /*  transforms the hamburger icon into a cross  */
+    /*  transforms the hamburger icon into a cross  */
     transform: rotate(-45deg);
-  }
-  
-  /* Making the navbar responsive by CSS Media Queries */
-  @media (max-width: 700px) {
+}
+
+/* Making the navbar responsive by CSS Media Queries */
+@media (max-width: 700px) {
     .menu-button-container {
-      display: flex;
+        display: flex;
+       
     }
+    .max-logo{
+        display: none;
+    }
+    .min-logo{
+        display: block;
+    }
+
     .menu {
-      position: absolute;
-      top: 50px;
-      margin-top: 100px;
-      left: 0;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
+        position: absolute;
+        top: 50px;
+        margin-top: 100px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
     }
-    #menu-toggle ~ .menu li {
-      height: 0;
-      margin: 0;
-      padding: 0;
-      border: 0;
+    .menu1 {
+        position: absolute;
+        top: 260px;
+        margin-top: 100px;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
     }
-    #menu-toggle:checked ~ .menu li {
-      border: 1px solid #9f9a9a;
-      height: 2.5em;
-      padding: 0.5em;
+
+    #menu-toggle~.menu li,
+    #menu-toggle~.menu1>li {
+        height: 0;
+        margin: 0;
+        padding: 0;
+        border: 0;
     }
-    .menu > li {
-      display: flex;
-      justify-content: center;
-      margin: 0;
-      padding: 0.5em 0;
-      width: 100%;
-      color: black;
-      background-color: #E8E8E8;
-      overflow: scroll;
-      
+
+    #menu-toggle:checked~.menu li,
+    #menu-toggle:checked~.menu1 li {
+        border: 1px solid #9f9a9a;
+        height: 2.5em;
+        padding: 0.5em;
+
     }
-    .menu > li:not(:last-child) {
-      border-bottom: 1px solid #444;
-   
+
+    .menu>li,
+    .menu1>li {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0.5em 0;
+        width: 100%;
+        color: black;
+        background-color: #E8E8E8;
+        overflow: scroll;
+
     }
-  }
+
+    .menu>li:not(:last-child) {
+        border-bottom: 1px solid #444;
+
+    }
+}
