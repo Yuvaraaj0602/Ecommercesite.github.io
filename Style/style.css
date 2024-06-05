@@ -233,6 +233,7 @@ p {
     position: relative;
 }
 
+
 .sel-nav::after {
     content: '';
     border: solid 5px;
@@ -705,7 +706,7 @@ footer p {
 
 }
 
-@media (max-width: 1025px) {
+@media (max-width: 1200px) {
 
 
     .container {
@@ -809,7 +810,6 @@ footer p {
         gap: 10px;
     }
 
-
     .home-content {
         padding: 32px 0px;
 
@@ -842,9 +842,6 @@ footer p {
     .winter-card .content-group {
         justify-content: space-evenly;
     }
-
-
-
 
     .about-us {
         gap: 40px;
@@ -889,16 +886,18 @@ footer p {
         width: 90%;
 
     }
-
-    .secondary-navbar {
-        padding: 10px;
-        gap: 5px;
+    .ord-1{
+        order: 1;
+    }
+    .ord-2{
+        order: 2;
     }
 
-    .secondary-navbar ul {
-        flex-direction: column;
-
-
+    .secondary-navbar {
+        gap: 2px;
+    }
+    .secondary-navbar ul{
+        padding: 10px;
     }
 
     .cart-section .container {
@@ -932,20 +931,20 @@ footer p {
     }
 
     .primary-navbar ul,
-    .secondary-navbar ul {
+    .secondary-navbar  {
         flex-wrap: wrap;
         gap: 10px;
-
     }
 
     .collection-flex ul {
         flex-direction: column;
     }
+    .cart-section ul{
+        flex-wrap: wrap;
+    }
 
     .product-cards {
         grid-template-columns: repeat(1, 1fr);
-
-
     }
 
     .popular-item-section ul {
@@ -965,6 +964,9 @@ footer p {
 
     footer {
         padding: 15px;
+    }
+    footer a{
+        padding: 15px 40px;
     }
 
     .footer-flex {
