@@ -812,7 +812,8 @@ footer p {
     }
 
     .home-content {
-        padding: 32px 0px;
+        padding-top: 32px;
+        padding-bottom: 32px;
 
     }
 
@@ -946,7 +947,10 @@ footer p {
     }
 
     .product-cards {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .winter-card{
+        grid-template-columns: repeat(1,1fr);
     }
 
     .popular-item-section ul {
