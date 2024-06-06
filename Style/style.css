@@ -1051,7 +1051,7 @@ footer p {
     transition: all 1s;
 }
 
-/*  Creating the menu button */
+
 .menu-button,
 .menu-button::before,
 .menu-button::after {
@@ -1073,7 +1073,7 @@ footer p {
     margin-top: 8px;
 }
 
-/*  Adding Functionality to the Hamburger Menu with CSS  */
+
 #menu-toggle:checked+.menu-button-container .menu-button::before {
     margin-top: 0px;
     transform: rotate(45deg);
@@ -1085,11 +1085,9 @@ footer p {
 
 #menu-toggle:checked+.menu-button-container .menu-button::after {
     margin-top: 0px;
-    /*  transforms the hamburger icon into a cross  */
     transform: rotate(-45deg);
 }
 
-/* Making the navbar responsive by CSS Media Queries */
 @media (max-width: 800px) {
     .menu-button-container {
         display: flex;
@@ -1107,6 +1105,7 @@ footer p {
         top: 50px;
         margin-top: 100px;
         left: 0;
+        padding: 0;
         flex-direction: column;
         width: 100%;
         justify-content: center;
@@ -1115,9 +1114,10 @@ footer p {
     }
     .menu1 {
         position: absolute;
-        top: 260px;
+        top: 272px;
         margin-top: 100px;
         left: 0;
+        padding: 0;
         flex-direction: column;
         width: 100%;
         justify-content: center;
@@ -1125,23 +1125,23 @@ footer p {
        
     }
    
-
     #menu-toggle~.menu li,
     #menu-toggle~.menu1>li {
         height: 0;
         margin: 0;
         padding: 0;
         border: 0;
+        transition: all 0.6s;
     }
-    #menu-toggle:checked~.menu,#menu-toggle:checked~.menu1 {
-        
-        background-color: rgba(0,0,0,0.8);
+    #menu-toggle:checked~.menu,#menu-toggle:checked~.menu1{
+        padding: 1em;
+        background-color: rgba(0,0,0,0.7);
     }
     #menu-toggle:checked~.menu li,
     #menu-toggle:checked~.menu1 li {
         border: 1px solid #9f9a9a;
         height: 2.5em;
-        padding: 0.5em;
+        padding: 0.25em 0;
 
     }
 
@@ -1150,7 +1150,7 @@ footer p {
         display: flex;
         justify-content: center;
         margin: 0;
-        padding: 0.5em 0;
+        padding: 0.25em 0;
         width: 100%;
         color: black;
         background-color: #E8E8E8;
