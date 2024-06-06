@@ -1189,9 +1189,9 @@ footer p {
     display: block;
     background-color: #000;
     position: absolute;
-    height: 6px;
-    width: 32px;
-    border-radius: 3px;
+    height: 2px;
+    width: 25px;
+    border-radius: 5px;
 }
 
 .menu-button::before {
