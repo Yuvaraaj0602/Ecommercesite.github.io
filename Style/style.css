@@ -208,6 +208,18 @@ p {
     align-items: center;
 }
 
+.sec-section {
+    display: flex;
+    gap: 22px;
+}
+
+.inputs {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 0;
+}
+
 .cart-section a {
     color: var(--white);
     text-decoration: none;
@@ -255,31 +267,51 @@ p {
     color: var(--lightblack);
 
 }
+.flex-list-1 {
+   display: flex;
+   align-items: center;
+   gap: 0;
+   justify-content: center;
+    height: 100%;
+    position: relative;
+    
+    
+}
 
 .cart {
+    position: absolute;
+    left: 0;
+    height: 100%;
     transition: all 0.5s;
     padding: 12px;
     background-color: var(--head-color);
-    font-size: 16px;
+    
 }
 
 
-
 .rate {
-    padding: 12px;
+    padding-left: 58px;
+    padding: 14px 14px 14px 58px;
     background-color: var(--white);
     color: var(--lightblack);
     font-size: var(--md);
 }
 
-.cart-section input {
-    display: inline;
-    padding: 12px;
+.flex-list input {
+    width: 100%;
+    padding: 14px;
     outline: none;
     border: none;
 }
 
-.cart-section button {
+.flex-list {
+    position: relative;
+}
+
+.flex-list button {
+    position: absolute;
+    height: 100%;
+    right: 0;
     cursor: pointer;
     transition: all 0.5s;
     padding: 12px;
@@ -302,12 +334,19 @@ p {
 
 }
 
+
 .cart:hover {
     background-color: var(--white);
 }
 
 .cart:hover path {
     fill: var(--head-color);
+}
+
+.price {
+    color: var(--head-color);
+    padding: 0;
+
 }
 
 .popular-item-section {
@@ -340,11 +379,7 @@ p {
     display: flex;
 }
 
-.price {
-    color: var(--head-color);
-    padding: 0;
 
-}
 
 .product-cards {
     display: grid;
@@ -822,6 +857,9 @@ footer p {
     .secondary-navbar ul {
         flex-wrap: wrap;
     }
+    .min-logo{
+        width: 125px;
+    }
 
     .home-block {
         gap: 10px;
@@ -840,12 +878,20 @@ footer p {
         padding: 0;
     }
 
+    .sec-section {
+        flex-direction: column;
+    }
+
+    .inputs {
+        justify-content: space-evenly;
+    }
+
     .cart-section .container {
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .cart-section div {
+    .cart-section div:not(.flex-list-1) {
         gap: 20px;
 
     }
@@ -943,22 +989,25 @@ footer p {
         transition: all 1s ease-in-out;
 
     }
-    .black-nav details summary::after{
+
+    .black-nav details summary::after {
         content: ' \00BB';
-       
+
     }
-    .black-nav details[open] summary::after{
+
+    .black-nav details[open] summary::after {
         transform: rotate(90deg);
     }
+
     .black-nav details summary {
         cursor: pointer;
         transition: margin 0.5s ease-out;
-        
-      }
-      
-     .black-nav details[open] summary {
+
+    }
+
+    .black-nav details[open] summary {
         margin-bottom: 10px;
-      }
+    }
 
     .black-nav summary {
         list-style-type: none;
@@ -1034,6 +1083,11 @@ footer p {
         align-items: center;
         gap: 40px;
 
+    }
+
+    .flex-list {
+
+        width: 50%;
     }
 
 
