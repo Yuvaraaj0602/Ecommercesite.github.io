@@ -202,7 +202,7 @@
     margin-top: 78px;
 }
 
-summary {
+.summary summary {
     list-style-type: none;
     color: var(--lightblack);
     font-weight: var(--regular);
@@ -214,12 +214,12 @@ summary {
     justify-content: space-between;
 }
 
-summary::after {
+.summary summary::after {
     content: '+';
     font-size: 20px;
 }
 
-details[open] summary~* {
+.summary details[open] summary~* {
     animation: sweep .5s ease-in-out;
 }
 
@@ -235,15 +235,15 @@ details[open] summary~* {
     }
 }
 
-details[open]>summary::after {
+.summary details[open]>summary::after {
     content: '-';
 }
 
-details {
+.summary details {
     transition: height 2s ease-in-out;
 }
 
-details p {
+.summary details p {
     padding: 47px 10px
 }
 
@@ -256,7 +256,7 @@ details p {
     margin-bottom: 70px;
 }
 
-/* Mini-laptop (1024px and below) */
+
 @media only screen and (max-width: 1024px) {
     .product-block {
         flex-direction: column;
