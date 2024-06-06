@@ -1243,6 +1243,7 @@ footer p {
         width: 100%;
         justify-content: center;
         align-items: center;
+        z-index: 1;
 
     }
 
@@ -1256,6 +1257,7 @@ footer p {
         width: 100%;
         justify-content: center;
         align-items: center;
+        z-index: 1;
 
     }
 
