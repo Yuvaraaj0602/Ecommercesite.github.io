@@ -1102,7 +1102,10 @@ footer p {
     .product-cards {
         grid-template-columns: repeat(2, 1fr);
     }
-
+    .season-sale h2{
+        text-wrap: nowrap;
+        transform: scale(0.75);
+    }
     .winter-card {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -1126,6 +1129,7 @@ footer p {
     }
 
     .newsletter .container {
+        padding-top: 30px;
         flex-direction: column;
         gap: 20px;
     }
