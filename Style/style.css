@@ -814,11 +814,20 @@ footer p {
     .secondary-navbar ul {
         flex-wrap: wrap;
     }
+    .home-block{
+        gap: 10px;
+    }
 
     .home-content {
+       
         padding-top: 32px;
         padding-bottom: 32px;
+        padding-left: 20px;
 
+    }
+    .home-media{
+     
+      padding: 0;
     }
 
     .cart-section .container {
@@ -994,7 +1003,7 @@ footer p {
     }
     .collection-flex ul{
         flex-wrap: nowrap;
-        transform: scale(0.65);
+        transform: scale(0.75);
         justify-content: center;
     }
 
