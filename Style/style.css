@@ -495,7 +495,9 @@ a:focus::after {
     align-items: center;
     gap: 47px;
 }
-
+.newsletter form{
+    display: flex;
+}
 .newsletter input[type='email'] {
     width: 471px;
     height: 47px;
@@ -760,11 +762,7 @@ footer p {
     }
 
 
-    .newsletter input[type='email'],
-    .newsletter input[type='submit'] {
-        width: 50%;
-
-    }
+   
 
     .about-us {
         gap: 120px;
@@ -786,6 +784,7 @@ footer p {
     .collection-flex ul {
         flex-wrap: wrap;
     }
+    
 
     .about-us a {
         margin-bottom: 25px;
@@ -801,7 +800,7 @@ footer p {
     }
 }
 
-@media (max-width: 770px) {
+@media (max-width: 860px) {
 
     .container {
         width: 90%;
@@ -845,11 +844,26 @@ footer p {
     .winter-card {
         width: 100%;
     }
+    .newsletter .container{
+        padding: 20px;
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        gap: 10px;
+    }
+    form{
+        width: 100%;
+        display: flex;
+    }
 
     .winter-card .content-group {
         justify-content: space-evenly;
     }
-
+    .collection-flex{
+        align-items: center;
+        gap: 15px;
+        flex-direction: column;
+    }
     .about-us {
         gap: 40px;
         flex-direction: column;
@@ -975,16 +989,21 @@ footer p {
     .product-card {
         padding: 0px 25px;
     }
+    .collection-flex{
+        flex-direction: column;
+    }
+    .collection-flex ul{
+        flex-wrap: nowrap;
+        transform: scale(0.65);
+        justify-content: center;
+    }
 
     .newsletter .container {
         flex-direction: column;
         gap: 20px;
     }
 
-    .newsletter form {
-        display: flex;
-
-    }
+  
 
     .newsletter input[type='email'] {
         width: 60%;
@@ -1023,7 +1042,9 @@ footer p {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
 }
+
 
 #menu-toggle {
     display: none;
@@ -1069,7 +1090,7 @@ footer p {
 }
 
 /* Making the navbar responsive by CSS Media Queries */
-@media (max-width: 700px) {
+@media (max-width: 800px) {
     .menu-button-container {
         display: flex;
        
@@ -1090,7 +1111,7 @@ footer p {
         width: 100%;
         justify-content: center;
         align-items: center;
-        
+               
     }
     .menu1 {
         position: absolute;
@@ -1101,7 +1122,9 @@ footer p {
         width: 100%;
         justify-content: center;
         align-items: center;
+       
     }
+   
 
     #menu-toggle~.menu li,
     #menu-toggle~.menu1>li {
@@ -1110,7 +1133,10 @@ footer p {
         padding: 0;
         border: 0;
     }
-
+    #menu-toggle:checked~.menu,#menu-toggle:checked~.menu1 {
+        
+        background-color: rgba(0,0,0,0.8);
+    }
     #menu-toggle:checked~.menu li,
     #menu-toggle:checked~.menu1 li {
         border: 1px solid #9f9a9a;
